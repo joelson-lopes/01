@@ -1,100 +1,288 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Joelson Lopes</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="assets/images/logodev.jpg" type="image/x-icon">
+    <title>Portfólio | Joelson Lopes</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/svg">
+    <script src="https://kit.fontawesome.com/412e60f1e0.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <div class="container">
-            <img src="assets/images/logodev.jpg" alt="Logo Joelson Lopes" class="logo">
-            <h1>Joelson Lopes</h1>
-            <p>Front-End Developer | Estudante de Informática e Gestão</p>
-            <nav>
-                <ul>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#formacao">Formação</a></li>
-                    <li><a href="#projetos">Projetos</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="#video" class="link"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="#skills" class="link"><i class="fa-solid fa-brain"></i></a></li>
+                <li><a href="#formacao" class="link"><i class="fa-solid fa-graduation-cap"></i></a></li>
+                <li><a href="#projetos" class="link"><i class="fa-solid fa-trowel-bricks"></i></a></li>
+                <li><a href="#" class="link" id="botao-tema"><i class="fa-solid fa-moon"></i></a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="sobre" class="secao">
-            <div class="container">
-                <h2>Sobre mim</h2>
-                <p>
-                    Sou <strong>Joelson Lopes</strong>, desenvolvedor front-end e estudante de Informática e Gestão. 
-                    Apaixonado por tecnologia, busco sempre evoluir meus conhecimentos em programação, redes de computadores 
-                    e segurança cibernética. Atualmente atuo também como COO na <em>Mercadinho</em>.
-                </p>
-                <img src="assets/setup.png" alt="Foto setup Joelson" class="foto-perfil">
+        <section id="ficha">
+            <img src="assets/images/profile.JPG" alt="Joelson Lopes" class="foto">
+            <h1>Joelson De Jesus</h1>
+            <p>Formado em Ciência da Computação, com especialização em docência superior, desenvolvimento web e inteligência artificial. Apaixonado por tecnologia e sempre em busca de novos desafios. Atualmente, atuo como professor e desenvolvedor, compartilhando conhecimento através de cursos online e projetos de código aberto.</p>
+            <div id="social">
+                <a href="https://www.linkedin.com/in/guanabara/" target="_blank" rel="nofollow"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/gustavoguanabara" target="_blank" rel="nofollow"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.youtube.com/cursoemvideo" target="_blank" rel="nofollow"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/gustavoguanabara/" target="_blank" rel="nofollow"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.cursoemvideo.com/" target="_blank" rel="nofollow"><i class="fa-solid fa-globe"></i></a>
             </div>
         </section>
 
-        <section id="formacao" class="secao">
-            <div class="container">
-                <h2>Formação</h2>
-                <ul>
-                    <li>Curso em Vídeo – desde fevereiro de 2024</li>
-                    <li>Especializações: Redes de Computadores, Segurança Cibernética, Ciência da Computação</li>
-                    <li>Atuação profissional: COO na Mercadinho</li>
-                </ul>
-            </div>
-        </section>
+        <section id="detalhes">
+            <article id="video">
+                <h2><i class="fa-solid fa-handshake-simple"></i> Deixe-me apresentar</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NpH-_bTPhlY?si=V2qd7lm3EtmH9cR2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </article>
 
-        <section id="projetos" class="secao">
-            <div class="container">
-                <h2>Projetos</h2>
-                <div class="grid-projetos">
-                    <div class="card">
-                        <img src="assets/projeto1.png" alt="Plano Estuda Fácil">
-                        <h3>Plano Estuda Fácil</h3>
-                        <p>Projeto acadêmico em parceria com a Africell.</p>
+            <article id="skills">
+                <h2><i class="fa-solid fa-brain"></i> Minhas skills</h2>
+
+                <div id="skill-container">
+                    <div class="item"> 
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i> HTML5
+                            </span>
+                            <span class="porcent">
+                                90%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 90%;"></div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/projeto2.png" alt="LAN - Advocacy">
-                        <h3>LAN - Advocacy</h3>
-                        <p>Site institucional para advocacia, com design responsivo.</p>
+
+                    <div class="item"> 
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i> CSS3
+                            </span>
+                            <span class="porcent">
+                                85%
+                            </span>
+                        </div>
+                        <div class="barra"> 
+                            <div class="progresso" style="width: 85%;"></div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/projeto3.png" alt="Creps Da Nicinha">
-                        <h3>Creps Da Nicinha</h3>
-                        <p>E-commerce de confeitaria, com foco em experiência do usuário.</p>
+
+                    <div class="item"> 
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-code"></i> JavaScript
+                            </span>
+                            <span class="porcent">
+                                20%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 20%;"></div>
+                        </div>
                     </div>
-                    <div class="card">
-                        <img src="assets/projeto4.png" alt="KY-Store">
-                        <h3>KY-Store</h3>
-                        <p>Loja virtual moderna, desenvolvida com boas práticas de UI/UX.</p>
+
+                     <div> 
+                        <div class="info">
+                            <span class="nome"><i class="fa-solid fa-code"></i> PHP</span>
+                            <span class="porcent">15%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 15%"></div>
+                        </div>
+                    </div>
+
+                    <div class="item"> 
+                        <div class="info">
+                            <span class="nome">
+                                <i class="fa-solid fa-person-rays"></i> Comunicação
+                            </span>
+                            <span class="porcent">
+                                100%
+                            </span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="item"> 
+                        <div class="info">
+                            <span class="nome"><i class="fa-solid fa-person-rays"></i> Trabalho em equipe</span>
+                            <span class="porcent">95%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 95%"></div>
+                        </div>
+                    </div>
+
+                    <div class="item"> 
+                        <div class="info">
+                            <span class="nome"><i class="fa-solid fa-person-rays"></i> Adaptabilidade</span>
+                            <span class="porcent">90%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 85%"></div>
+                        </div>
+                    </div>
+
+                    <div class="item"> 
+                        <div class="info">
+                            <span class="nome"><i class="fa-solid fa-person-rays"></i> Liderança</span>
+                            <span class="porcent">85%</span>
+                        </div>
+                        <div class="barra">
+                            <div class="progresso" style="width: 85%"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </article> 
 
-        <section id="contato" class="secao">
-            <div class="container">
-                <h2>Contato</h2>
-                <p>Entre em contato comigo através das redes sociais ou formulário abaixo:</p>
-                <form>
-                    <input type="text" placeholder="Seu nome" required>
-                    <input type="email" placeholder="Seu e-mail" required>
-                    <textarea placeholder="Sua mensagem" required></textarea>
-                    <button type="submit">Enviar</button>
-                </form>
-                <p class="localizacao">📍 Angola, Icolo & Bengo | Zango 0, Vida-Pacífica</p>
-            </div>
+            <article id="formacao">
+                <h2><i class="fa-solid fa-graduation-cap"></i> Formação</h2>
+
+                <div id="formacao-container"> 
+
+                    <div class="curso"> 
+                        <p class="periodo">2023 - 2023</p>
+                        <h3 class="instituicao">Curso em Vídeo</h3>
+                        <p class="titulacao">Técnico em Informática</p>
+                    </div>
+
+                    <div class="curso"> 
+                        <p class="periodo">2024-2024</p>
+                        <h3 class="instituicao"></h3>
+                        <p class="titulacao">Bacharelado em </p>
+                    </div>
+
+                    <div class="curso"> 
+                        <p class="periodo">2023 - </p>
+                        <h3 class="instituicao">Curso em Vídeo</h3>
+                        <p class="titulacao">Licenciatura em Informática</p>
+                    </div>
+
+                    <div class="curso"> 
+                        <p class="periodo">2001 - 2003</p>
+                        <h3 class="instituicao"></h3>
+                        <p class="titulacao">Docência para Ensino Superior Profissional</p>
+                    </div>
+
+                    <div class="curso"> 
+                        <p class="periodo">2009 - 2010</p>
+                        <h3 class="instituicao">Fundação para Ensino à Distância</h3>
+                        <p class="titulacao">Especialização para produção em ambientes EAD</p>
+                    </div>
+
+                    <div class="curso"> 
+                        <p class="periodo">2021 - 2024</p>
+                        <h3 class="instituicao">Centro de Inteligência Artificial</h3>
+                        <p class="titulacao">Técnicas para aplicação de IAs</p>
+                    </div>
+
+                </div>
+
+            </article> 
+
+            <article id="projetos">
+                <h2><i class="fa-solid fa-trowel-bricks"></i> Projetos</h2>
+
+                <div id="projeto-container">
+                    <div class="projeto">
+                        <img src="imagens/projeto-01-videos.jpg" alt="Projeto Vídeos" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2022</p>
+                            <h3 class="titulo">Projeto de Vídeos</h3>
+                            <p>Projeto construído para treinar a inserção de vídeos em nosso site, além da navegação entre páginas.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Primeiro projeto construído no Curso de HTML5 e CSS3 do CursoemVídeo onde construímos a navegação entre páginas e a incorporação de mídias, principalmente de imagens e vídeos. Um ótimo início para quem estava em seus primeiros passos em HTML e CSS.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> 
+                        <img src="imagens/projeto-02-cordel.jpg" alt="Projeto Cordel" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2023</p>
+                            <h3 class="titulo">Projeto Cordel</h3>
+                            <p>Projeto construído para treinar efeito parallax em imagens e a apresentaçao de conteúdo em diversos tamanhos de tela.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Apresentar um conteúdo na tela de forma criativa é sempre um desafio aos desenvolvedores de sites. Nesse projeto, apresentamos um cordel de maneira bem-humorada, responsiva e usando técnicas como parallax para exibição de imagens de fundo. </p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> 
+                        <img src="imagens/projeto-03-android.jpg" alt="Projeto Android" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2023</p>
+                            <h3 class="titulo">Projeto Android</h3>
+                            <p>Projeto construído para treinar conteúdos e imagens dinâmicas com a História do sistema Android.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Você sabia que o sistema Android não foi criado inicialmente para ser usado em celulares? Acompanhe esse projeto para conhecer um pouco mais sobre as curiosidades que envolvem o sistema mais popular para smartphones e aprenda como adaptar mídias a diferentes tamanhos de tela.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> 
+                        <img src="imagens/projeto-04-links.jpg" alt="Projeto Social" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2024</p>
+                            <h3 class="titulo">Projeto Redes Sociais</h3>
+                            <p>Projeto construído para treinar responsividade e múltiplos media queries e divulgar as suas principais redes sociais.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Um meta projeto muito interessante deixa o visitante interagir com um aparelho de smartphone que tem seu conteúdo carregado a cada vez que você clica em um ícone de redes sociais. Interatividade e responsividade para um projeto bem elaborado e que utiliza iframes na sua estrutura principal.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> 
+                        <img src="imagens/projeto-05-login.jpg" alt="Projeto Login" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2024</p>
+                            <h3 class="titulo">Projeto Login</h3>
+                            <p>Projeto construído para treinar responsividade e formulários em uma das telas mais populares em sistemas.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Criar uma tela de login é algo muito comum na vida de quem vai construir sites. Mas essa tela de login deve conter componentes bonitos e com funcionalidades bem definidas e intuitivas de usar. Essa tela de login vai adaptando seus conteúdos usando caixas flexíveis (flexbox) para funcionar em qualquer tamanho de tela.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                    <div class="projeto"> 
+                        <img src="imagens/projeto-06-album.jpg" alt="Projeto Album Flex" class="foto">
+                        <div class="projeto-info">
+                            <p class="periodo">2025</p>
+                            <h3 class="titulo">Projeto Álbum de Fotos</h3>
+                            <p>Projeto construído para treinar conteúdos flexíveis usando CSS FlexBox para mostrar um álbum de fotos.</p>
+                            <details class="descricao">
+                                <summary>Saiba mais...</summary>
+                                <p>Mostrar fotos de tamanhos diferentes em uma mesma tela pode ser um grande desafio de design, mas também pode ser uma grande oportunidade para treinar nossos conhecimentos adquiridos sobre flexbox e criar uma maneira discreta e de bom-gosto para apresentar nossas memórias em forma de imagens.</p>
+                            </details>
+                        </div>
+                    </div>
+
+                </div>
+
+            </article> 
         </section>
     </main>
 
     <footer>
-        <p>Portfólio desenvolvido por <strong>Joelson Lopes</strong> | 2025</p>
+        Portfólio desenvolvido por <a href="https://www.cursoemvideo.com/" target="_blank">Curso em Vídeo</a> em 2025
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
