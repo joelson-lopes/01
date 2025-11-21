@@ -296,7 +296,7 @@ strong:hover {
 }
 
 .linkup {
-
+  color: var(--texto);
   text-decoration: none;
 }
 
@@ -309,7 +309,6 @@ strong:hover {
 }
 
  .projeto-info {
-  color: var(--texto);
   text-decoration: none;
   display: flex;  
   flex-direction: column;
