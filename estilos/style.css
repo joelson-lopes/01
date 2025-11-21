@@ -309,7 +309,7 @@ strong:hover {
 }
 
  .projeto-info {
-  color: white;
+  color: var(--texto);
   text-decoration: none;
   display: flex;  
   flex-direction: column;
